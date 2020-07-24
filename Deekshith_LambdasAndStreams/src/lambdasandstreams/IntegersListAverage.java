@@ -17,9 +17,7 @@ public class IntegersListAverage {
 			numbersList.add(number);
 		}
 		
-		numbersList.stream().mapToInt(number->number)
-							.average()
-							.ifPresent(avg->System.out.print("\nAverage is :"+avg));
+		numbersList.stream().mapToInt(number->number).average().ifPresent(avg->System.out.print("\nAverage is :"+avg));
 		
 		sc.close();
 		
